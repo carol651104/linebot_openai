@@ -32,7 +32,7 @@ def handle_message(event):
     try:
         response = openai.ChatCompletion.create(
             model="gpt-5-nano",
-            temperature=0.7,
+            temperature=1,
             messages=[
                 # 👉 System Prompt（人格 + 語言控制）
                 {
